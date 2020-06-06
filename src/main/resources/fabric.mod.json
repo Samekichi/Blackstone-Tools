@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "blackstonetools",
+  "version": "${version}",
+
+  "name": "Blackstone Tools",
+  "description": "This mod changes it so that if you craft things with Blackstone, you get blackstone tools instead of stone tools.",
+  "authors": [
+    "M_S_72"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/blackstonetools/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.martenschaefer.blackstonetools.BlackstoneToolsMod"
+    ],
+	"client": [
+    ]
+  },
+  "mixins": [
+    "blackstonetools.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.8.2",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

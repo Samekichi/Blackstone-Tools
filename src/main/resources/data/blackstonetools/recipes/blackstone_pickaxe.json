@@ -1,0 +1,21 @@
+    {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        " | ",
+        " | "
+      ],
+      "key": {
+        "S": {
+          "item": "minecraft:blackstone"
+        },
+        "|": {
+          "item": "minecraft:stick"
+        }
+      },
+      "result": {
+        "item": "blackstonetools:blackstone_pickaxe",
+        "count": 1
+      }
+    }
+

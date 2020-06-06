@@ -1,0 +1,21 @@
+    {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SS ",
+        "S| ",
+        " | "
+      ],
+      "key": {
+        "S": {
+          "item": "minecraft:blackstone"
+        },
+        "|": {
+          "item": "minecraft:stick"
+        }
+      },
+      "result": {
+        "item": "blackstonetools:blackstone_axe",
+        "count": 1
+      }
+    }
+
