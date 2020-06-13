@@ -6,11 +6,12 @@
   "name": "Blackstone Tools",
   "description": "This mod changes it so that if you craft things with Blackstone, you get blackstone tools instead of stone tools.",
   "authors": [
-    "M_S_72"
+    "mschae23"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "http://curseforge.com/minecraft/mc-mods/blackstone-tools",
+    "sources": "https://github.com/mschae23/Blackstone-Tools",
+    "issues": "https://github.com/mschae23/Blackstone-Tools/issues"
   },
 
   "license": "CC0-1.0",
@@ -34,6 +35,5 @@
     "minecraft": "1.16.x"
   },
   "suggests": {
-    "flamingo": "*"
   }
 }
