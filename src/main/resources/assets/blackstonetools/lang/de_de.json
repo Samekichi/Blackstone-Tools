@@ -4,6 +4,7 @@
  "item.blackstonetools.blackstone_axe": "Schwarzsteinaxt",
  "item.blackstonetools.blackstone_shovel": "Schwarzsteinschaufel",
  "item.blackstonetools.blackstone_hoe": "Schwarzsteinhacke",
- "block.blackstonetools.blackstone_furnace": "Schwarzsteinofen",
- "item.blackstonetools.blackstone_furnace": "Schwarzsteinofen"
+ "item.vanilla-hammers.blackstone_hammer": "Schwarzsteinhammer",
+
+ "block.blackstonetools.blackstone_furnace": "Schwarzsteinofen"
 }
