@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Blackstone Tools",
-  "description": "This mod changes it so that if you craft things with Blackstone, you get blackstone tools instead of stone tools.",
+  "description": "If you craft things with Blackstone, you'll now get blackstone tools instead of stone tools.",
   "authors": [
     "mschae23"
   ],
