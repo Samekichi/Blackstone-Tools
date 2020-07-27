@@ -7,6 +7,6 @@ public class BlackstoneShovelItem extends ShovelItem {
  
 	public BlackstoneShovelItem(Item.Settings settings) {
 		
-		super(BlackstoneToolMaterial.BLACKSTONE, 1.5F, -3.0F, settings);
+		super(BlackstoneToolMaterials.TOOLS, 1.5F, -3.0F, settings);
 	}
 }
