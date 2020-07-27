@@ -14,7 +14,7 @@
     "issues": "https://github.com/mschae23/Blackstone-Tools/issues"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/blackstonetools/icon.png",
 
   "environment": "*",
