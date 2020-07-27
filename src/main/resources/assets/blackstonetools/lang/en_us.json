@@ -4,8 +4,10 @@
  "item.blackstonetools.blackstone_axe": "Blackstone Axe",
  "item.blackstonetools.blackstone_shovel": "Blackstone Shovel",
  "item.blackstonetools.blackstone_hoe": "Blackstone Hoe",
+
  "item.vanilla-hammers.blackstone_hammer": "Blackstone Hammer",
  "item.vanillaexcavators.blackstone_excavator": "Blackstone Excavator",
+ "item.blackstonetools.blackstone_superaxe": "Blackstone SuperAxe",
 
  "block.blackstonetools.blackstone_furnace": "Blackstone Furnace"
 }
