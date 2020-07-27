@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "vanilla-hammers:item/blackstone_hammer"
+    "layer0": "blackstonetools:item/blackstone_hammer"
   }
 }

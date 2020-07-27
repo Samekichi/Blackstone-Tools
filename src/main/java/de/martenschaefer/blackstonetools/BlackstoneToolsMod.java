@@ -1,8 +1,12 @@
 package de.martenschaefer.blackstonetools;
 
 import de.martenschaefer.blackstonetools.block.BlackstoneToolsBlocks;
+import de.martenschaefer.blackstonetools.item.BlackstoneToolMaterial;
 import de.martenschaefer.blackstonetools.item.BlackstoneToolsItems;
+import draylar.magna.item.ExcavatorItem;
+import draylar.ve.VanillaExcavators;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -21,6 +25,9 @@ public class BlackstoneToolsMod implements ModInitializer {
  	Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_axe"), BlackstoneToolsItems.BLACKSTONE_AXE);
  	Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_shovel"), BlackstoneToolsItems.BLACKSTONE_SHOVEL);
  	Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_hoe"), BlackstoneToolsItems.BLACKSTONE_HOE);
+
+ 	if(FabricLoader.getInstance().isModLoaded("vanillaexcavators"))
+		Registry.register(Registry.ITEM, new Identifier("vanillaexcavators", "blackstone_excavator"), new ExcavatorItem(BlackstoneToolMaterial.BLACKSTONE, 4, -2.6f, new Item.Settings().group(VanillaExcavators.GROUP)));
  	
  	Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "blackstone_furnace"), BlackstoneToolsBlocks.BLACKSTONE_FURNACE);
  	Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_furnace"), new BlockItem(BlackstoneToolsBlocks.BLACKSTONE_FURNACE, new Item.Settings().group(ItemGroup.MISC)));

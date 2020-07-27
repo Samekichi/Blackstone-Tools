@@ -26,6 +26,8 @@ dependencies {
 
 	modImplementation "io.github.cottonmc:LibCD:${project.libcd_version}"
 	include "io.github.cottonmc:LibCD:${project.libcd_version}"
+
+	modImplementation "com.github.Draylar:vanilla-excavators:${project.vanilla_excavators_version}"
 }
 
 processResources {
