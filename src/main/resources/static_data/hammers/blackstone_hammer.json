@@ -2,7 +2,7 @@
   "id": "blackstone",
   "miningLevel": 1,
   "durability": 856,
-  "blockBreakSpeed": 1.16,
+  "blockBreakSpeed": 1.155,
   "attackDamage": 4,
   "attackSpeed": -2.6,
   "enchantability": 7,

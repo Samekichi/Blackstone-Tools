@@ -8,7 +8,7 @@ import net.minecraft.util.Lazy;
 public enum BlackstoneToolMaterials implements ToolMaterial {
  
 	TOOLS(131, 4.0f, 1.0f),
-	EXCAVATOR(856, 1.16f, 1.0f);
+	EXCAVATOR(856, 1.155f, 1.0f);
 
 	private final int itemDurability;
 	private final float miningSpeed;
