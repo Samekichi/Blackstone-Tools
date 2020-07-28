@@ -15,12 +15,12 @@ public enum BlackstoneToolMaterials implements ToolMaterial {
 	private final float attackDamage;
 	private final Lazy<Ingredient> repairIngredient;
 
-	private BlackstoneToolMaterials(int itemDurability, float miningSpeed, float attackDamage) {
+	BlackstoneToolMaterials(int itemDurability, float miningSpeed, float attackDamage) {
 
 		this.itemDurability = itemDurability;
 		this.miningSpeed = miningSpeed;
 		this.attackDamage = attackDamage;
-		this.repairIngredient = new Lazy(() -> Items.BLACKSTONE);
+		this.repairIngredient = new Lazy<>(() -> Ingredient.ofItems(Items.BLACKSTONE));
 	}
 	
 	@Override

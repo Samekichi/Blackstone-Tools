@@ -1,5 +1,10 @@
 package de.martenschaefer.blackstonetools.item;
 
+import com.github.levoment.superaxes.Items.SuperAxeItem;
+import com.github.levoment.superaxes.SuperAxesMaterialGenerator;
+import com.github.levoment.superaxes.SuperAxesMod;
+import draylar.magna.item.ExcavatorItem;
+import draylar.ve.VanillaExcavators;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 
@@ -10,4 +15,6 @@ public class BlackstoneToolsItems {
 	public static final Item BLACKSTONE_AXE = new BlackstoneAxeItem(new Item.Settings().group(ItemGroup.TOOLS));
 	public static final Item BLACKSTONE_SHOVEL = new BlackstoneShovelItem(new Item.Settings().group(ItemGroup.TOOLS));
 	public static final Item BLACKSTONE_HOE = new BlackstoneHoeItem(new Item.Settings().group(ItemGroup.TOOLS));
+	public static final ExcavatorItem BLACKSTONE_EXCAVATOR = new ExcavatorItem(BlackstoneToolMaterials.EXCAVATOR, 4, -2.6f, new Item.Settings().group(VanillaExcavators.GROUP));
+	public static final SuperAxeItem BLACKSTONE_SUPERAXE = new SuperAxeItem(new SuperAxesMaterialGenerator(BlackstoneToolMaterials.TOOLS), new Item.Settings().group(SuperAxesMod.SUPERAXES_GROUP));
 }

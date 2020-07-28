@@ -1,13 +1,8 @@
 package de.martenschaefer.blackstonetools;
 
-import com.github.levoment.superaxes.Items.SuperAxeItem;
-import com.github.levoment.superaxes.SuperAxesMaterialGenerator;
-import com.github.levoment.superaxes.SuperAxesMod;
+import com.github.levoment.superaxes.Items.ModItems;
 import de.martenschaefer.blackstonetools.block.BlackstoneToolsBlocks;
-import de.martenschaefer.blackstonetools.item.BlackstoneToolMaterials;
 import de.martenschaefer.blackstonetools.item.BlackstoneToolsItems;
-import draylar.magna.item.ExcavatorItem;
-import draylar.ve.VanillaExcavators;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.BlockItem;
@@ -30,11 +25,13 @@ public class BlackstoneToolsMod implements ModInitializer {
  	Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_hoe"), BlackstoneToolsItems.BLACKSTONE_HOE);
 
  	if(FabricLoader.getInstance().isModLoaded("vanillaexcavators"))
-		 Registry.register(Registry.ITEM, new Identifier("vanillaexcavators", "blackstone_excavator"), new ExcavatorItem(BlackstoneToolMaterials.EXCAVATOR, 4, -2.6f, new Item.Settings().group(VanillaExcavators.GROUP)));
+		 Registry.register(Registry.ITEM, new Identifier("vanillaexcavators", "blackstone_excavator"), BlackstoneToolsItems.BLACKSTONE_EXCAVATOR);
 
- 	if(FabricLoader.getInstance().isModLoaded("lvmnt"))
- 		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_superaxe"), new SuperAxeItem(new SuperAxesMaterialGenerator(BlackstoneToolMaterials.TOOLS), new Item.Settings().group(SuperAxesMod.SUPERAXES_GROUP)));
- 	
+ 	if(FabricLoader.getInstance().isModLoaded("lvmnt")) {
+
+ 		Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_superaxe"), BlackstoneToolsItems.BLACKSTONE_SUPERAXE);
+ 		ModItems.mapOfIdentifiers.put(new Identifier(MOD_ID, "blackstone_superaxe"), BlackstoneToolsItems.BLACKSTONE_SUPERAXE);
+		}
  	Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "blackstone_furnace"), BlackstoneToolsBlocks.BLACKSTONE_FURNACE);
  	Registry.register(Registry.ITEM, new Identifier(MOD_ID, "blackstone_furnace"), new BlockItem(BlackstoneToolsBlocks.BLACKSTONE_FURNACE, new Item.Settings().group(ItemGroup.MISC)));
  }
