@@ -35,5 +35,11 @@
     "minecraft": "1.16.x"
   },
   "suggests": {
+  },
+  "custom": {
+    "modupdater": {
+      "strategy": "curseforge",
+      "projectID": 388087
+    }
   }
 }
